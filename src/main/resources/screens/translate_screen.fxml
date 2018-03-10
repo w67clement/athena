@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.tpe10.athena.gui.screens.TranslateScreenV1">
+   <children>
+      <ChoiceBox id="choiceBoxOutput" cache="true" layoutX="404.0" layoutY="14.0" prefHeight="25.0" prefWidth="208.0" />
+      <TextArea layoutX="20.0" layoutY="50.0" prefHeight="388.0" prefWidth="208.0" text="&#10;" />
+      <TextArea layoutX="404.0" layoutY="50.0" prefHeight="388.0" prefWidth="208.0" />
+      <ChoiceBox id="choiceBoxInput" layoutX="20.0" layoutY="14.0" pickOnBounds="false" prefHeight="25.0" prefWidth="208.0" />
+      <Button id="traductionButton" layoutX="241.0" layoutY="102.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="145.0" text="Traduire" />
+      <Button id="resetButton" layoutX="241.0" layoutY="185.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="145.0" text="Rénitialiser" />
+      <ProgressBar id="progressBar" layoutX="235.0" layoutY="420.0" prefHeight="18.0" prefWidth="157.0" progress="0.0" />
+      <ToggleButton id="recordButton" layoutX="241.0" layoutY="21.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="145.0" text="ToggleButton" />
+   </children>
+</Pane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="800.0" style="-fx-background-image: url(&quot;https://vignette.wikia.nocookie.net/overwatch/images/7/71/Rc39.png/revision/latest?cb=20160427223542&quot;) no-repeat fixed center/80%;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.tpe10.athena.gui.screens.LoadingScreen">
+   <bottom>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <ProgressBar id="chargementProgressionBar" prefHeight="25.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane opacity="0.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

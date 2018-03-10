@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ChoiceBox prefHeight="40.0" prefWidth="200.0" />
+      <ChoiceBox layoutX="400.0" prefHeight="40.0" prefWidth="200.0" />
+      <ToggleButton layoutX="200.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Enregister" />
+      <Button layoutX="300.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Répéter" />
+      <TextArea layoutY="40.0" prefHeight="320.0" prefWidth="300.0" />
+      <TextArea layoutX="300.0" layoutY="40.0" prefHeight="320.0" prefWidth="300.0" />
+      <ProgressBar layoutX="150.0" layoutY="360.0" prefHeight="25.0" prefWidth="300.0" progress="0.0" />
+      <Button layoutY="360.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Traduire" />
+      <Button layoutX="500.0" layoutY="360.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Réinitialiser" />
+   </children>
+</AnchorPane>

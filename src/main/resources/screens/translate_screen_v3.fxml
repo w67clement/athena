@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.*?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="480.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="fr.tpe10.athena.gui.screens.TranslateScreenV3">
+    <top>
+        <SplitPane dividerPositions="0.5" BorderPane.alignment="CENTER">
+            <items>
+                <SplitPane dividerPositions="0.5" styleClass="invisible-split-pane">
+                    <AnchorPane>
+                        <JFXComboBox fx:id="inputBox" prefHeight="30.0" AnchorPane.bottomAnchor="10.0"
+                                     AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0"
+                                     AnchorPane.topAnchor="10.0"/>
+                    </AnchorPane>
+                    <AnchorPane>
+                        <JFXButton fx:id="repeatButton" style="-fx-background-color: #1E88E5;"
+                                   mnemonicParsing="false" text="button.repeat" AnchorPane.bottomAnchor="10.0"
+                                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+                        </JFXButton>
+                    </AnchorPane>
+                </SplitPane>
+                <SplitPane dividerPositions="0.5">
+                    <AnchorPane>
+                        <JFXButton fx:id="resetButton" style="-fx-background-color: #E53935;"
+                                   mnemonicParsing="false" text="Réinitialiser" AnchorPane.bottomAnchor="10.0"
+                                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+                        </JFXButton>
+                    </AnchorPane>
+                    <AnchorPane>
+                        <JFXComboBox fx:id="outputBox" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0"
+                                     AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0"/>
+                    </AnchorPane>
+                </SplitPane>
+            </items>
+        </SplitPane>
+    </top>
+    <center>
+        <SplitPane dividerPositions="0.5" BorderPane.alignment="CENTER">
+            <items>
+                <SplitPane dividerPositions="0.8" orientation="VERTICAL">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0">
+                            <children>
+                                <JFXTextArea fx:id="inputText" layoutX="-22.0" layoutY="-58.0"
+                                             AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                             AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0">
+                            <children>
+                                <JFXToggleButton fx:id="recordButton" mnemonicParsing="false" text="Enregistrer"
+                                                 AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0"
+                                                 AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+                <SplitPane dividerPositions="0.8" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0">
+                            <children>
+                                <JFXTextArea fx:id="outputText" layoutX="-58.0" layoutY="-66.0"
+                                             AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                             AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0">
+                            <children>
+                                <JFXButton fx:id="translateButton" mnemonicParsing="false" text="Traduire"
+                                           AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                           AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+            </items>
+        </SplitPane>
+    </center>
+    <bottom>
+        <AnchorPane BorderPane.alignment="CENTER">
+            <children>
+                <JFXProgressBar fx:id="progressBar" prefHeight="7.5" AnchorPane.bottomAnchor="10.0"
+                                AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0"/>
+            </children>
+        </AnchorPane>
+    </bottom>
+</BorderPane>

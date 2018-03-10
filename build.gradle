@@ -1,0 +1,52 @@
+/*
+ * Copyright © 2018 AperLambda <aper.entertainment@gmail.com>
+ *
+ * This file is part of athena.
+ *
+ * Licensed under the MIT license. For more information,
+ * see the LICENSE file.
+ */
+
+group 'org.aperlambda'
+version '0.0.1-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'fr.tpe10.athena.Athena'
+
+sourceCompatibility = 1.8
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    maven {
+        url 'https://aperlambda.github.io/maven/'
+    }
+    mavenCentral()
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
+}
+
+dependencies {
+    compile 'org.aperlambda:lambdajcommon:1.2.0'
+    compile 'com.jfoenix:jfoenix:1.10.0'
+    compile 'com.googlecode.soundlibs:mp3spi:1.9.5.4'
+    compile 'org.apache.logging.log4j:log4j-core:2.9.1'
+    compile 'org.fusesource.jansi:jansi:1.16'
+    compile files('dependencies/JARVIS-API.jar', 'dependencies/javaflacencoder-1.0-SNAPSHOT.jar')
+}
+
+jar {
+    from {
+        (configurations.runtime - configurations.compile).collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+
+    manifest {
+        attributes("Implementation-Title": project.name,
+                "Implementation-Version": version,
+                "Main-Class": mainClassName)
+    }
+}
